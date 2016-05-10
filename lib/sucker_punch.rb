@@ -54,4 +54,4 @@ at_exit do
   SuckerPunch::Queue.shutdown_all
 end
 
-require 'sucker_punch/railtie' if defined?(::Rails)
+require 'sucker_punch/railtie' if defined?(::Rails) && defined?(::Rails::Railtie)
